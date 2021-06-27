@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-<src href="./Fonts/Poppins-Regular.ttf">
+
 
   <title>Frontend Mentor | Four card feature section</title>
 
@@ -13,7 +13,7 @@
   <style>
     @font-face {
     font-family: "Poppins";
-    src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+    src: url("./Fonts/Poppins-Regular.ttf") format("truetype");
 }
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
@@ -38,29 +38,24 @@
     /* identical to box height */
     letter-spacing: 0.25px;
     text-align: center;
-    color: #4D4F62;
+    color: #4D4F62;}
 
-}
 .heading-two{
-  position: absolute;
+position: absolute;
 height: 54px;
 left: 0.45%;
 right: 0.23%;
 top: calc(50% - 54px/2 + 27px);
-
 font-family: Poppins;
 font-style: normal;
 font-weight: 600;
 font-size: 36px;
 line-height: 54px;
 /* identical to box height */
-
 text-align: center;
 letter-spacing: 0.25px;
+color: #4D4F62;}
 
-color: #4D4F62;
-
-}
 .body-text{
 position: absolute;
 height: 50px;
@@ -124,8 +119,6 @@ width: 350px;
 height: 250px;
 left: 0%;
 top: 90%;
-/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
-border-radius: 10px; */
 border-top: 5px solid #44D3D2;
 background: #FFFFFF;
 box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
@@ -173,6 +166,7 @@ color: #4D4F62;
 </head>
 
 <body>
+  <div class="body">
   <div class="heading-container">
   <div class="heading-one">Reliable, efficient delivery</div>
   <div class="heading-two">Powered by Technology</div>
@@ -204,7 +198,7 @@ color: #4D4F62;
   <img class="team-builder-icon" src="images/icon-calculator.svg">
   </div>
 </div>
-
+</div>
   <footer>
     <!-- <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
