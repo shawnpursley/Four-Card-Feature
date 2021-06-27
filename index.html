@@ -3,13 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+<src href="./Fonts/Poppins-Regular.ttf">
 
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    @font-face {
+    font-family: "Poppins";
+    src: url("./fonts/Poppins-Regular.ttf") format("truetype");
+}
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
     .heading-container{
@@ -61,7 +66,7 @@ position: absolute;
 height: 50px;
 left: 0%;
 right: 0%;
-top: 80%;
+top: 100%;
 font-family: Poppins;
 font-style: normal;
 font-weight: normal;
@@ -78,19 +83,95 @@ position: absolute;
 width: 1110px;
 height: 530px;
 left: 165px;
-top: 312px;
+top: 0%;
 /* background-color: blue; */
 }
 .top_box{
 position: absolute;
 width: 350px;
 height: 250px;
-left: 545px;
-top: 312px;
-border: 0 5px 0 0 solid green;
+left: 35%;
+top: 60%;
+box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+border-radius: 10px;
+border-top: 5px solid red;
+}
+.heading{
+position: absolute;
+height: 30px;
+left: 9.14%;
+right: 39.71%;
+top: 0%;
+font-family: Poppins;
+font-style: normal;
+font-weight: 600;
+font-size: 20px;
+line-height: 30px;
+/* identical to box height */
+color: #4D4F62;}
+
+.team-builder-icon{
+position: absolute;
+width: 64px;
+height: 64px;
+left: 70%;
+top: 70%;
+}
+
+.left-box{
+position: absolute;
+width: 350px;
+height: 250px;
+left: 0%;
+top: 90%;
+/* box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.0973011);
+border-radius: 10px; */
+border-top: 5px solid #44D3D2;
+background: #FFFFFF;
+box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+border-radius: 8px;
+}
+
+.bottom_box{
+position: absolute;
+width: 350px;
+height: 250px;
+left: 35%;
+top: 120%;
+border-top: 5px solid #FCAE4A;
+background: #FFFFFF;
+box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+border-radius: 8px;
+}
+.right_box{
+position: absolute;
+width: 350px;
+height: 250px;
+left: 70%;
+top: 90%;
+border-top: 5px solid #549EF2;
+background: #FFFFFF;
+box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
+border-radius: 8px;
+}
+p{
+position: absolute;
+height: 46px;
+left: 9.14%;
+right: 9.14%;
+top: calc(50% - 46px/2 - 34px);
+font-family: Poppins;
+font-style: normal;
+font-weight: normal;
+font-size: 13px;
+line-height: 23px;
+/* or 177% */
+letter-spacing: 0.0902778px;
+color: #4D4F62;
 }
   </style>
 </head>
+
 <body>
   <div class="heading-container">
   <div class="heading-one">Reliable, efficient delivery</div>
@@ -99,30 +180,36 @@ border: 0 5px 0 0 solid green;
   Our Artificial Intelligence powered tools use millions of project data points
   to ensure that your project is successful</div>
   </div>
+
 <div class="body-container">
-<div class="left_box">
-  Supervisor
-  Monitors activity to identify project roadblocks
+
+<div class="left-box">
+<div class="heading">Supervisor</div>
+  <p>Monitors activity to identify project roadblocks</p>
+  <img class="team-builder-icon" src="images/icon-supervisor.svg">
 </div>
 <div class="top_box">
-  Team Builder
-  Scans our talent network to create the optimal team for your project
+  <div class="heading">Team Builder</div>
+  <p>Scans our talent network to create the optimal team for your project</p>
+  <img class="team-builder-icon" src="images/icon-team-builder.svg">
 </div>
 <div class="bottom_box">
-  Karma
-  Regularly evaluates our talent to ensure quality
+ <div class="heading">Karma</div>
+  <p>Regularly evaluates our talent to ensure quality</p>
+  <img class="team-builder-icon" src="images/icon-karma.svg">
 </div>
 <div class="right_box">
-  Calculator
-  Uses data from past projects to provide better delivery estimates
+  <div class="heading">Calculator</div>
+  <p>Uses data from past projects to provide better delivery estimates</p>
+  <img class="team-builder-icon" src="images/icon-calculator.svg">
   </div>
 </div>
 
   <footer>
-    <p class="attribution">
+    <!-- <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
-    </p>
+    </p> -->
   </footer>
 </body>
 </html>
