@@ -2,30 +2,31 @@
     font-family: "Poppins";
     src: url("./Fonts/Poppins-Regular.ttf") format("truetype");
 }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-    .heading-container{
-    position: absolute;
-    width: 540px;
-    height: 168px;
-    left: 450px;
-    top: 80px;
+.attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
+ /* .heading-container, heading-one, and heading-two is for the top text of the page */
+.heading-container{
+position: absolute;
+width: 540px;
+ height: 168px;
+left: 450px;
+ top: 80px;
   }
   .heading-one{
-    position: absolute;
-    height: 54px;
-    left: 0%;
-    right: 0%;
-    top: calc(50% - 54px/2 - 24px);
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 36px;
-    line-height: 54px;
+position: absolute;
+height: 54px;
+left: 0%;
+right: 0%;
+top: calc(50% - 54px/2 - 24px);
+font-family: Poppins;
+font-style: normal;
+font-weight: 200;
+font-size: 36px;
+line-height: 54px;
     /* identical to box height */
-    letter-spacing: 0.25px;
-    text-align: center;
-    color: #4D4F62;}
+letter-spacing: 0.25px;
+text-align: center;
+color: #4D4F62;}
 
 .heading-two{
 position: absolute;
@@ -42,7 +43,7 @@ line-height: 54px;
 text-align: center;
 letter-spacing: 0.25px;
 color: #4D4F62;}
-
+/* This is for the body of the text under the titles */
 .body-text{
 position: absolute;
 height: 50px;
@@ -58,15 +59,15 @@ line-height: 25px;
 letter-spacing: 0.104167px;
 color: #4D4F62;
 mix-blend-mode: normal;
-opacity: 0.5;
-}
+opacity: 0.5;}
+/* This is a container I put in here that encloses the entire website. I added this just because I wanted to have it here */
 .body-container{
 position: absolute;
 width: 1110px;
 height: 700px;
 left: 165px;
 top: 0%;}
-
+/* Supervisor Box */
 .box1{
 position: absolute;
 width: 350px;
@@ -98,7 +99,7 @@ font-size: 20px;
 line-height: 30px;
 /* identical to box height */
 color: #4D4F62;}
-
+/* Team Building Box */
 .box2{
 position: absolute;
 width: 350px;
@@ -129,7 +130,7 @@ width: 64px;
 height: 64px;
 left: 70%;
 top: 70%;}
-
+/* Karma Box */
 .box3{
 position: absolute;
 width: 350px;
@@ -139,8 +140,8 @@ top: 120%;
 border-top: 5px solid #FCAE4A;
 background: #FFFFFF;
 box-shadow: 0px 15px 30px -11px rgba(131, 166, 210, 0.5);
-border-radius: 8px;
-}
+border-radius: 8px;}
+
 .icon3{
 position: absolute;
 width: 64px;
@@ -161,6 +162,7 @@ font-size: 20px;
 line-height: 30px;
 /* identical to box height */
 color: #4D4F62;}
+/* Calculator Box */
 .box4{
 position: absolute;
 width: 350px;
@@ -208,7 +210,7 @@ letter-spacing: 0.0902778px;
 color: #4D4F62;
 }
 
-@media only screen and (max-width: 376px){
+@media only screen and (max-width: 720px){
 .heading-container{
 position: absolute;
 width: 311px;
